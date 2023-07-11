@@ -1,0 +1,25 @@
+{
+    "name": "gumphp/think-gateway-worker",
+    "type": "library",
+    "require": {
+        "topthink/framework": "^v6.1|^v8.0",
+        "workerman/gateway-worker": "^v3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gumphp\\gatewayworker\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "services": [
+                "gumphp\\gatewayworker\\service\\GatewayWorkerService"
+            ],
+            "config": {
+                "base": "config/gatewayworker.php"
+            }
+        }
+    }
+}
